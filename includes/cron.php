@@ -167,10 +167,6 @@ class RS_Schedule_Cron {
 				
 				$event_today = $rule->occursAt( new DateTime( $ymd ) );
 				
-				if ( function_exists('rs_debug_log') ) {
-					rs_debug_log( 'info', 'event_today', 'RRule check for post ID ' . $post_id . ' on ' . $ymd . ': ' . ($event_today ? 'true' : 'false') );
-				}
-				
 				return $event_today;
 			} catch ( Exception $e ) {
 				return false;
