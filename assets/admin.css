@@ -1,0 +1,47 @@
+/* Controls - General */
+.rs-calendar-controls .control {
+	margin: 10px 0;
+}
+
+/* Controls - Radio Button Row */
+.rs-calendar-controls .radio-button-row .button {
+	margin-bottom: 0;
+}
+
+.rs-calendar-controls .radio-button-row .button:not(:last-child) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.rs-calendar-controls .radio-button-row .button:not(:first-child) {
+	margin-left: -1px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.rs-calendar-controls .radio-button-row .button input:where([type="radio"], [type="checkbox"]) {
+	position: absolute;
+	width: 0;
+	height: 0;
+	-webkit-appearance: none;
+	appearance: none;
+
+	border: none;
+	background: none;
+	box-shadow: none;
+	overflow: hidden;
+}
+
+/* Control Types - View */
+.rs-calendar-controls .control-view .control-input {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.rs-calendar-controls .control-view .view-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
