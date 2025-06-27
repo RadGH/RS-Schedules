@@ -29,7 +29,7 @@ add_action( 'rs_schedule/event', 'my_custom_event_handler', 10, 2 );
 ```
 
 ### Q: Can I add custom events to the calendar?
-Yes, you can add events to the calendar using the `rs_schedule/get_calendar_events` filter. 
+Yes, you can add events to the calendar using the file: `rs_schedule/get_calendar_events`
 
 However, this should only be used to display events. Events added using this filter do not trigger the `rs_schedule/event` action.
 
