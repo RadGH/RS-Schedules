@@ -27,14 +27,6 @@ function my_custom_event_handler( $post_id, $today ) {
 }
 add_action( 'rs_schedule/event', 'my_custom_event_handler', 10, 2 );
 ```
-      
-### Q: What if an event spans multiple days?
-
-The event will only be triggered on **the first day of the event**.
-
-For recurring events, the action is still triggered on every recurrence, but only the on the first day.
-
-If you need to run code on the days spanning the event, consider adding your own scheduled events instead.
 
 ### Q: Can I add custom events to the calendar?
 Yes, you can add events to the calendar using the `rs_schedule/get_calendar_events` filter. 
