@@ -212,6 +212,7 @@ class RS_Schedule_Post_Type {
 					'required' => 1,
 					'display_format' => 'Y-m-d H:i:s',
 					'return_format' => 'Y-m-d\TH:i:s',
+					'first_day' => 0,
 				),
 				
 				// @TODO multi-day events
@@ -224,6 +225,7 @@ class RS_Schedule_Post_Type {
 					'required' => 1,
 					'display_format' => 'Y-m-d H:i:s',
 					'return_format' => 'Y-m-d\TH:i:s',
+					'first_day' => 0,
 				),
 				
 				array(
@@ -234,6 +236,7 @@ class RS_Schedule_Post_Type {
 					'required' => 0,
 					'display_format' => 'Y-m-d H:i:s',
 					'return_format' => 'Y-m-d\TH:i:s',
+					'first_day' => 0,
 				),
 				*/
 				
