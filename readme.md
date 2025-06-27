@@ -16,9 +16,9 @@ The event will be triggered once per day by triggering the action `rs_schedule/e
 
 ## Frequently Asked Questions
 
-### Q: How do I run custom code on the event?
+### Q: How do I run custom code on the day of an event?
 
-You can add the `rs_schedule/event` action to run custom code for an event:
+Use the action `rs_schedule/event` which is called once per each event occurrence.
 
 ```php
 function my_custom_event_handler( $post_id, $today ) {
