@@ -57,12 +57,14 @@ class RS_Schedule_Settings {
 	 * @return void
 	 */
 	public function add_calendar_page() {
+		$parent_slug = apply_filters( 'rs_schedule/calendar_parent_slug', 'edit.php?post_type=schedule' );
+		
 		add_submenu_page(
-			'edit.php?post_type=schedule',
+			$parent_slug,
 			'Calendar',
 			'Calendar',
 			'edit_posts',
-			'calendar',
+			'rs_schedule_calendar',
 			array( $this, 'render_calendar_page' )
 		);
 	}
@@ -185,11 +187,10 @@ class RS_Schedule_Settings {
 	 * Enqueue assets on the admin
 	 */
 	public function enqueue_admin_assets() {
-		$post_type = $_GET['post_type'] ?? '';
 		$page = $_GET['page'] ?? '';
 		
 		// Only load assets on the calendar page
-		if ( $post_type === 'schedule' && $page === 'calendar' ) {
+		if ( $page === 'rs_schedule_calendar' ) {
 			wp_enqueue_style( 'rs-schedule-admin', RS_SCHED_URL . '/assets/admin.css', array(), RS_SCHED_VERSION );
 			$this->enqueue_fullcalendar_assets();
 		}
