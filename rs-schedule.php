@@ -2,7 +2,7 @@
 /*
 Plugin Name: RS Schedule
 Description: Adds a <code>schedule</code> post type, allowing you to create standard and recurring events. The events can be seen on a Calendar page which uses the FullCalendar API with the RRule integration. On the day of each event, a cron action is triggered, allowing you to run custom code or send notifications on a customizable schedule.
-Version: 1.0.0
+Version: 1.0.1
 Author: Radley Sustaire
 Author URI: https://radleysustaire.com
 Date Created: 6/27/2025
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 define( 'RS_SCHED_PATH', __DIR__ );
 define( 'RS_SCHED_URL', untrailingslashit(plugin_dir_url(__FILE__)) );
-define( 'RS_SCHED_VERSION', '1.0.0' );
+define( 'RS_SCHED_VERSION', '1.0.1' );
 
 class RS_Schedule_Plugin {
 	

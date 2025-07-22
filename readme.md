@@ -87,5 +87,8 @@ composer require rlanvin/php-rrule
 
 ## Changelog
 
+### 1.0.1
+-  Added an action after the calendar, used to display ical feeds by other plugins
+
 ### 1.0.0
 - Initial release
