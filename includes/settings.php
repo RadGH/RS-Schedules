@@ -179,6 +179,10 @@ class RS_Schedule_Settings {
 			// Calendar object will be rendered here (see schedule-calendar.js)
 			?>
 			<div id="calendar"></div>
+			
+			<?php
+			do_action( 'rs_schedule/calendar_page_after' );
+			?>
 		</div>
 		<?php
 	}
