@@ -2,6 +2,8 @@
 
 Adds a <code>schedule</code> post type, allowing you to create standard and recurring events. The events can be seen on a Calendar page which uses the FullCalendar API with the RRule integration. On the day of each event, a cron action is triggered, allowing you to run custom code or send notifications on a customizable schedule.
 
+- [View this plugin on ZingMap.com](https://zingmap.com/plugin/rs-schedules/)
+
 ## Required Plugins
 
 1. [Advanced Custom Fields PRO](https://advancedcustomfields.com/)
