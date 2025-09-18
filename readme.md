@@ -87,6 +87,12 @@ This plugin uses the [@rlanvin/php-rrule](https://github.com/rlanvin/php-rrule) 
 composer require rlanvin/php-rrule
 ```
 
+## (Developers-Only) How to publish updates
+
+Updates are managed by the Alchemy Updater script. To publish a new version, upload the latest version to the server at:
+
+- https://plugins.zingmap.com/
+
 ## Changelog
 
 ### 1.0.2
