@@ -8,6 +8,7 @@ Author URI: https://radleysustaire.com
 Date Created: 6/27/2025
 GitHub Plugin URI: https://github.com/RadGH/RS-Schedules
 GitHub Branch: master
+Alchemy Update URI: https://plugins.zingmap.com/plugin/rs-schedules/
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -35,6 +36,11 @@ class RS_Schedule_Plugin {
 			self::add_admin_notice( '<strong>RS Schedule:</strong> The following plugins are required: ' . implode( ', ', $missing_plugins ) . '.', 'error' );
 			
 			return;
+		}
+		
+		// Load the plugin updater
+		if ( ! class_exists('Alchemy_Updater') ) {
+			require_once( RS_SCHED_PATH . '/includes/alchemy-updater.php' );
 		}
 		
 		// Load plugin files
