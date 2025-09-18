@@ -89,6 +89,9 @@ composer require rlanvin/php-rrule
 
 ## Changelog
 
+### 1.0.2
+- Added support for Alchemy Updater to provide automatic updates
+
 ### 1.0.1
 -  Added an action after the calendar, used to display ical feeds by other plugins
 
