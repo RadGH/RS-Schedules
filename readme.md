@@ -95,6 +95,9 @@ Updates are managed by the Alchemy Updater script. To publish a new version, upl
 
 ## Changelog
 
+### 1.0.3
+- Updated alchemy updater script to reduce unnecessary requests
+
 ### 1.0.2
 - Added support for Alchemy Updater to provide automatic updates
 
